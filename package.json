@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devsutd/journey-builder-activity-template.git"
+    "url": "git+https://github.com/bhanuatsfdc/SFMC/journey-builder-activity-template.git"
   },
   "keywords": [
     "journey",
@@ -21,7 +21,7 @@
   "author": "Devs United",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/devsutd/journey-builder-activity-template/issues"
+    "url": "https://github.com/bhanuatsfdc/SFMC/journey-builder-activity-template/issues"
   },
   "homepage": "https://github.com/devsutd/journey-builder-activity-template#readme",
   "dependencies": {
