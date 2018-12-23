@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/bhanuatsfdc/SFMC/journey-builder-activity-template/issues"
   },
-  "homepage": "https://github.com/devsutd/journey-builder-activity-template#readme",
+  "homepage": "https://github.com/bhanuatsfdc/SFMC/journey-builder-activity-template#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "bower": "^1.8.0",
