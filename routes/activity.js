@@ -72,7 +72,24 @@ exports.save = function (req, res) {
  * POST Handler for /execute/ route of Activity.
  */
 exports.execute = function (req, res) {
+        // Find the in argument
+        var getInArgument = (k) => {
+          if (req.body && req.body.inArguments) {
+            for (let i = 0; i < req.body.inArguments.length; i++) {
+              let e = req.body.inArguments[i];
+              if (k in e) {
+                return e[k];
+              }
+            }
+          }
+          console.log("Unable To Find In Argument: ", k);
+          return;
+        }
 
+        // example: https://developer.salesforce.com/docs/atlas.en-us.noversion.mc-app-development.meta/mc-app-development/example-rest-activity.htm
+        let discountCode = getInArgument('emailAddress') || 'nothing';
+
+      console.log('discount code:', discountCode);
     // example on how to decode JWT
     JWT(req.body, process.env.jwtSecret, (err, decoded) => {
 
@@ -86,7 +103,7 @@ exports.execute = function (req, res) {
             
             // decoded in arguments
             var decodedArgs = decoded.inArguments[0];
-            
+            console.log(decodedArgs);
             logData(req);
             res.send(200, 'Execute');
         } else {
